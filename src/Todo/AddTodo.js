@@ -23,9 +23,9 @@ function AddTodo({ onCreate }) {
     //   setValue(""); //после добавления очищает поле со значением
     // }
     if (input.value().trim()) {
-      onCreate(input.value); //onCreate - нужно передавать как параметр функции
+      onCreate(input.value()); //onCreate - нужно передавать как параметр функции
       //setValue(""); //после добавления очищает поле со значением
-      input.clear(); //после добавления очищает поле со значением
+      input.clear();
     }
   }
   return (
